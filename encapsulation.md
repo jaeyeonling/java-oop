@@ -66,7 +66,7 @@
 ```java
 // before
 public AuthResult authenticate(final String id, final String pw) {
-	final Member member = findOne(id);
+  final Member member = findOne(id);
   if (Objects.isNull(member)) {
     return AuthResult.NO_MATCH;
   }
@@ -82,7 +82,7 @@ public AuthResult authenticate(final String id, final String pw) {
 
 // after
 public AuthResult authenticate(final String id, final String pw) {
-	final Member member = findOne(id);
+  final Member member = findOne(id);
   if (Objects.isNull(member)) {
     return AuthResult.NO_MATCH;
   }
@@ -261,7 +261,7 @@ public class Member {
     this.verificationEmailStatus = 2;
   }
   
-	public boolean isEmailVerified() {
+  public boolean isEmailVerified() {
     return verificationEmailStatus == 2;
   }
 }

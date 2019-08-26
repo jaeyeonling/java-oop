@@ -58,24 +58,25 @@
 
 ```java
 public class Member {
-  private String name;
-  private String id;
   
-	public void setName(final String name) {
-    this.name = name;
-  }
-  
-  public String getName() {
-		return name;
-  }
-  
-	public void setId(final String id) {
-		this.id = id;
-  }
-  
-  public String getId() {
-		return id;
-  }
+    private String name;
+    private String id;
+
+    public void setName(final String name) {
+        this.name = name;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setId(final String id) {
+		    this.id = id;
+    }
+
+    public String getId() {
+      return id;
+    }
 }
 ```
 
